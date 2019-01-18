@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!-- import google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+	<!-- refresh page in every 30 seconds -->
+	<!-- <meta http-equiv="refresh" content="30"> -->
+	<script src="js/weather.js"></script>
+	<meta charset="utf-8"/>
+	<title>Weather app</title>
+</head>
+<body>
+	<h1>Tempo atual</h1>
+	<div class="weather-app">
+		<div class="left">
+			<div class="temperature"><span id="temperature">0</span>&deg;</div>
+			<div class="location"><span id="location">Unknown</span></div>
+		</div>
+
+		<div class="right">
+			<div class="top">
+				<img src="imgs/codes/200.png" id="icon" width="75px"/>
+			</div>
+
+			<div class="bottom">
+
+				<div class="humidity">
+					<img src="imgs/humidity.png" height="16px"/>
+					<span id="humidity">0</span>%
+				</div>
+
+				<div class="wind">
+					<span id="wind">0</span><span id="letra"> Km/h</span> <span id="direction">N</span>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<h4>JavaScript - jQuery - openweathermap.org API</h4>
+
+	<footer>
+		<p>Posted by: David Aniceto</p>
+		<p>&reg 2019, All Rights Reserved</p>
+	</footer>
+</body>
+</html>
